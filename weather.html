@@ -3,6 +3,13 @@
   <head>
     <title>Weather</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+	<style>
+	.nw-states, .sw-states {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+	</style>
   </head>
   <body>
     <div id="main">
@@ -17,13 +24,15 @@
       </div>
       <hr />
       <div class="contents">
-        <h1>USA</h1>
+        <h1>NOAA</h1>
         <hr/>
         <a href="https://water.weather.gov/ahps/">USA National Observations NOAA</a>
         <h1>Northwest</h1>
         <a href="https://atmos.uw.edu/current-weather/northwest-radar/">Radar</a><br />
         <a href="https://www.wrh.noaa.gov/mso/newrgl.php">METAR Surface Observation Map</a>
-        <h2>Oregon</h2>
+        <hr/>
+		<div class="nw-states">
+		<h2>Oregon</h2>
         <a href="https://www.wrh.noaa.gov/map/?obs=true&wfo=pqr&basemap=OpenStreetMap&boundaries=true,false&obs_popup=true">Weather and Hazards Viewer</a><br />
         <a href="https://www.tripcheck.com/Pages/Road-Conditions?mainNav=RoadConditions&curRegion=0">ODOT Cameras</a><br />
         <a href="https://www.tripcheck.com/Pages/Custom-Cameras">ODOT Custom Cameras</a>
@@ -96,8 +105,11 @@
         <ul>
           <li><a href="https://www.nwrfc.noaa.gov/snow/snowplot.cgi?SHAI1">Snow Information</a></li>
         </ul>
-        <h1>Southwest</h1>
-        <h2>Arizona</h2>
+        </div>
+		<h1>Southwest</h1>
+        <hr/>
+		<div class="sw-states">
+		<h2>Arizona</h2>
         <ul>
           <li><a href="https://forecast.weather.gov/MapClick.php?lat=33.4255&lon=-111.9372">7 Day</a></li>
           <li><a href="https://www.wunderground.com/forecast/us/az/tempe?cm_ven=localwx_10day">10 Day</a></li>
@@ -123,6 +135,7 @@
           <li><a href="https://forecast.weather.gov/MapClick.php?lat=37.3685&lon=-115.16">7 Day</a></li>
           <li><a href="https://www.wunderground.com/forecast/us/nv/alamo?cm_ven=localwx_10day">10 Day</a></li>
         </ul>
+		</div>
       </div>
     </div>
   </body>
