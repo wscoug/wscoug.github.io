@@ -47,8 +47,9 @@ div#navbar ul li a:hover:not(.active) {
     background-color: #880E22;
 }
 
-.active {
+div#navbar ul li a.active {
     background-color: #53565A;
+    color: #d2d7d3;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -80,7 +81,7 @@ h3 {
 hr {
     margin: 0;
     padding: 0;
-    height: 1px;
+    height: 2px;
     border-width: 0;
     color: black;
     background-color: black;
